@@ -6,14 +6,14 @@
 <title>Intro</title>
 
 <style>
-:root {
+.light {
     --bg: #f4f4f4;
     --card: #ffffff;
     --text: #222;
     --accent: rgb(165, 107, 74);
 }
 
-.dark {
+:root {
     --bg: #1b1b1b;
     --card: #2a2a2a;
     --text: #f0f0f0;
@@ -131,14 +131,14 @@ footer {
 <header>
     <h1>Kavrėl Documentation</h1>
 
-   <!--  <nav>
-        <a href="../index.html">Home</a>
-        <a href="lesson1.html">Previous</a>
-        <a href="lesson3.html">Next</a>
-    </nav> -->
+   <nav>
+        <a href="./index.html">Home</a>
+      <!--    <a href="lesson1.html">Previous</a>
+        <a href="lesson3.html">Next</a>-->
+    </nav> 
 
-    <button onclick="toggleDarkMode()">
-        Toggle Dark Mode
+    <button onclick="toggleLightMode()">
+        Toggle Light Mode
     </button>
 </header>
 
@@ -270,12 +270,9 @@ footer {
                 <td>'</td>
             </tr>
         </table>
-        <div class="card">
     <div class="note">
 
         You may notice that both /ɾ/ and /ɹ/ are romanized as "r," so what's the difference? Well, if you see "r" at the start or end of a syllable (e.g. "er" (zero) or "rodz" (shelter)), it's pronounced as the latter (voiced alveolar approximant). Otherwise, it's the former (a voiced alveolar tap, e.g. "arze" (ego, hubris))
-    </div>
-</div>
     </div>
 <div class="card">
         <h2>Vowels</h2>
@@ -348,7 +345,7 @@ As you can see, there is no romanization for /ə/. This is because it only has o
     </div>
     
 </div>
-    <div class="card">
+<div class="card">
         <h2>Grammar</h2>
 
         <p>
@@ -367,7 +364,7 @@ As you can see, there is no romanization for /ə/. This is because it only has o
         <p>
         all mean the same thing semantically. With that said, the commonly used word order is Subject-Object-Verb (the man (nom.) the rat (acc.) saw), but it's up to you!
         </p>
-    </div>
+</div>
 
     <div class="card">
         <h2>Examples</h2>
@@ -378,7 +375,7 @@ As you can see, there is no romanization for /ə/. This is because it only has o
             </div>
 
             <div class="gloss">
-               NP rat.NOM NP sky.ACC 3SG-watch-GNO-FAC-PRES. <br> The rat the sky watches.
+               NP rat.NOM NP sky.ACC 3SG-watch-GNO-FAC-PRES <br> The rat the sky watches.
             </div>
 
             <div>
@@ -440,8 +437,8 @@ Intro to Kavrėl
 </footer>
 
 <script>
-function toggleDarkMode() {
-    document.body.classList.toggle("dark");
+function toggleLightMode() {
+    document.body.classList.toggle("light");
 }
 
 function showAnswer(id) {
