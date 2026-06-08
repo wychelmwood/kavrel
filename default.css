@@ -1,0 +1,129 @@
+.light {
+    --bg: #f4f4f4;
+    --card: #ffffff;
+    --text: #222;
+    --accent: rgb(165, 107, 74);
+}
+
+:root {
+    --bg: #1b1b1b;
+    --card: #2a2a2a;
+    --text: #f0f0f0;
+    --accent: rgb(165, 107, 74);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+header {
+    background: var(--accent);
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    margin-top: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.note {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-left: 4px solid gold;
+    background: rgba(255, 255, 0, 0.1);
+    border-radius: 4px;
+}
+
+.note-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.card {
+    background: var(--card);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0.5rem;
+    border: 1px solid #999;
+}
+
+.example {
+    background: rgba(100,100,100,0.1);
+    padding: 0.75rem;
+    border-left: 4px solid var(--accent);
+    margin: 0.5rem 0;
+}
+
+.conlang {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.gloss {
+    color: #777;
+    font-style: italic;
+}
+
+button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.answer {
+    display: none;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background: rgba(0,255,0,0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    opacity: 0.7;
+}
+
+a {
+    color: var(--accent);
+}
+
+.light a {
+    color: #d6a07e;
+}
